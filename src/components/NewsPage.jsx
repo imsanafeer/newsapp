@@ -14,7 +14,7 @@ const NewsPage = ({ category, headline }) => {
       setLoading(true);
       setError(null); // Reset error state before fetching data
 
-      const url = `https://newsapi.org/v2/top-headlines?country=in&category=${category}&apiKey=638d131a6b8841efb48620eda5fc83f4`;
+      const url = `https://newsapi.org/v2/top-headlines?country=in&category=${category}&apiKey=${process.env.REACT_APP_API_KEY}`;
 
       try {
         const response = await fetch(url);
