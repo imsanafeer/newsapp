@@ -1,0 +1,15 @@
+.footer {
+  width: 100%;
+  background-color: #011e29;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+}
+
+.footer p {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}

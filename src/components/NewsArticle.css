@@ -1,0 +1,169 @@
+.article-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 358.4px; /* 80% of 448px */
+  /* min-height: 527.2px;  */
+  height: 527.2px; 
+  box-shadow: 0 3.2px 6.4px rgba(0, 0, 0, 0.1); /* 80% of 4px and 8px */
+  border-radius: 6.4px; /* 80% of 8px */
+  background-color: #011e29;
+  margin-top: 46.4px; /* 80% of 58px */
+  /* overflow:scroll; */
+}
+
+.article-container img {
+  width: 307.2px; 
+  height: 172.8px; 
+  border-radius: 6.4px 6.4px 0 0; /* 80% of 8px */
+  margin: 25.6px; /* 80% of 32px */
+}
+
+.article-link {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Ensure text color is inherited from the container */
+}
+
+.article-content {
+  padding: 16px; /* 80% of 20px */
+  text-align: left;
+}
+
+.article-content h3 {
+  margin: 0;
+  font-size: 25.6px; /* 80% of 32px */
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #fff;
+}
+
+.article-content p {
+  color: #fff;
+  margin: 8px 0; /* 80% of 10px */
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+button {
+  background-color: #0C7BFD;
+  border: none;
+  padding: 4px 8px; /* 80% of 5px 10px */
+  border-radius: 4px; /* 80% of 5px */
+  cursor: pointer;
+  flex: 1;
+}
+
+button a {
+  text-decoration: none;
+  font-weight: 400;
+  font-style: normal;
+  color: #fff;
+  font-size: 19.2px; /* 80% of 24px */
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .article-container {
+    max-width: 300px; /* Adjust width for tablets */
+    max-height: auto; /* Allow height to adjust based on content */
+    margin-top: 40px; /* Adjust margin for smaller screens */
+  }
+
+  .article-container img {
+    width: 100%; /* Full width for smaller screens */
+    height: auto; /* Adjust height proportionally */
+    margin: 16px; /* Adjust margin */
+  }
+
+  .article-content {
+    padding: 12px; /* Adjust padding */
+  }
+
+  .article-content h3 {
+    font-size: 22px; /* Adjust font size */
+  }
+
+  .article-content p {
+    font-size: 16px; /* Adjust font size */
+  }
+
+  button {
+    padding: 4px 8px; /* Adjust padding */
+  }
+
+  button a {
+    font-size: 16px; /* Adjust font size */
+  }
+}
+
+@media (max-width: 768px) {
+  .article-container {
+    max-width: 280px; /* Further adjust width */
+    margin-top: 30px; /* Further adjust margin */
+  }
+
+  .article-container img {
+    width: 100%; /* Full width */
+    height: auto; /* Adjust height proportionally */
+    margin: 12px; /* Adjust margin */
+  }
+
+  .article-content {
+    padding: 10px; /* Further adjust padding */
+  }
+
+  .article-content h3 {
+    font-size: 18px; /* Further adjust font size */
+  }
+
+  .article-content p {
+    font-size: 14px; /* Further adjust font size */
+  }
+
+  button {
+    padding: 4px 6px; /* Further adjust padding */
+  }
+
+  button a {
+    font-size: 14px; /* Further adjust font size */
+  }
+}
+
+@media (max-width: 480px) {
+  .article-container {
+    max-width: 100%; /* Full width */
+    margin-top: 20px; /* Further adjust margin */
+  }
+
+  .article-container img {
+    width: 100%; /* Full width */
+    height: auto; /* Adjust height proportionally */
+    margin: 8px; /* Adjust margin */
+  }
+
+  .article-content {
+    padding: 8px; /* Further adjust padding */
+  }
+
+  .article-content h3 {
+    font-size: 16px; /* Further adjust font size */
+  }
+
+  .article-content p {
+    font-size: 12px; /* Further adjust font size */
+  }
+
+  button {
+    padding: 4px 4px; /* Further adjust padding */
+  }
+
+  button a {
+    font-size: 12px; /* Further adjust font size */
+  }
+}
