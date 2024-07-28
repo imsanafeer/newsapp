@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import newsicon from "../assets/unnamed.webp";
 import "./NewsPage.css";
 import NewsArticle from "./NewsArticle";
-import Navbar from "./Navbar";
+// import Navbar from "./Navbar";
 
 const NewsPage = ({ category,headline }) => {
   const [articles, setArticles] = useState([]);
@@ -22,12 +22,12 @@ const NewsPage = ({ category,headline }) => {
   return (
     <div className="page-container">
       <div className="headline">
-        <div className="headline-logo"> <img src={newsicon} />
-        <h1>{loading ? (
+        <div className="headline-logo"> <img src={newsicon}  alt=""/>
+        <>{loading ? (
             <h1>Loading...</h1> // Show loading text while data is being fetched
           ) : (
             <h1>{headline}</h1>
-          )}</h1>
+          )}</>
         </div>
         
         <div className="main-page">
